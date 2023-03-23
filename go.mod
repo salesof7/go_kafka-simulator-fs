@@ -1,3 +1,5 @@
-module github.com/codeedu/imersaofsfc2-simulator
+module github.com/salesof7/go_kafka-simulator-fs
 
-go 1.16
+go 1.20
+
+require github.com/confluentinc/confluent-kafka-go v1.9.2
