@@ -1,3 +1,4 @@
+[![Banner](/placeholder.jpg)](https://github.com/xavimondev/supaplay)
 <p align="center">
   <img src="https://img.shields.io/github/languages/top/salesof7/go_kafka-simulator-fs "Language"" alt=" Language" />
   <img src="https://img.shields.io/github/stars/salesof7/go_kafka-simulator-fs "Stars"" alt=" Stars" />
@@ -6,15 +7,33 @@
   <img src="https://img.shields.io/github/contributors/salesof7/go_kafka-simulator-fs "Contributors"" alt=" Contributors" />
 </p>
 
-## Overview
+## Table of Contents
 
-go_kafka-simulator-fs is a project using Confluent Kafka and dotenv for simulating file system interactions.
+- [Stack](#stack)
+- [Project Summary](#project-summary)
+- [Setting Up](#setting-up)
+- [Run Locally](#run-locally)
+- [FAQ](#faq)
 
-## Prerequisites
+## Stack
 
-- [Go](https://go.dev/doc/install): Install Go following the instructions for your operating system. To test your installation, open a new terminal and run `go version`.
-- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git): Download and install Git following the instructions for your operating system. To check that Git was installed successfully, run `git --version`.
-- [Visual Studio Code](https://code.visualstudio.com/): A lightweight powerful source code editor.
+- [confluent-kafka-go](https://github.com/confluentinc/confluent-kafka-go): Library for Kafka integration, essential for data fetching and server-client communication.
+- [godotenv](https://github.com/joho/godotenv): Package for loading environment variables, crucial for configuration and authentication.
+
+## Project Summary
+
+- [app](app): Main application code and logic implementation.
+- [app/routes](app/routes): Contains routing configurations for the application.
+- [infra](infra): Infrastructure-related code and configurations.
+- [infra/kafka](infra/kafka): Infrastructure configurations specific to Kafka.
+- [destinations](destinations): Code related to defining destination endpoints.
+- [.docker](.docker): Contains Docker configurations for the project.
+- [.docker/kafka](.docker/kafka): Docker configurations specific to Kafka setup.
+- [app/kafka](app/kafka): Code related to Kafka integration in the application.
+
+## Setting Up
+
+Insert your environment variables.
 
 ## Run Locally
 
@@ -31,24 +50,20 @@ go build -o myapp
 go run main.go  
 ```
 
-## Api Reference
-
-#### Get all products
-
-```bash
-GET /api/products
-```
-
-| Name | Type   | Optional | Description  |
-| ---- | ------ | -------- | ------------ |
-| term | string | required | Search term. |
-
-## Acknowledgements
-
-- Thanks to [Lucide icons.](https://lucide.dev/)
-- [Awesome Inspiration.](https://awesomeinsp.link)
-- Thanks to this outstanding resource [Awesome Tool.](https://awesomeinsp.link)
-
 ## Contributors
 
 [![Contributors](https://contrib.rocks/image?repo=salesof7/go_kafka-simulator-fs)](https://github.com/salesof7/go%5Fkafka-simulator-fs/graphs/contributors)
+
+## FAQ
+
+#### 1.What is this project about?
+
+This project aims to **briefly describe your project's purpose and goals.**
+
+#### 2.How can I contribute to this project?
+
+Yes, we welcome contributions! Please refer to our [Contribution Guidelines](CONTRIBUTING.md) for more information on how to contribute.
+
+#### 3.What is this project about?
+
+Your answer.
